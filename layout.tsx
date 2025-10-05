@@ -12,9 +12,9 @@ const papyrus = Papyrus({
 })
 
 export const metadata: Metadata = {
-  title: "StudyMind AI - Your Mystical Study Companion",
+  title: "EduAstra - Your Smart Study Companion",
   description:
-    "Transform any scroll into ancient wisdom, discover curated knowledge, and accelerate your learning with AI-powered mystical study assistance.",
+    "Transform any study material in simple and engaging format and accelerate your learning with AI-powered study assistance.",
   generator: "StudyMind AI",
 }
 
