@@ -1,0 +1,42 @@
+import Link from "next/link"
+import { Brain, Upload, Sparkles } from "lucide-react"
+
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 manga-pattern">
+      <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h1 className="text-6xl font-black text-white mb-4 transform -skew-x-6">
+            STUDYMIND AI
+          </h1>
+          <p className="text-xl text-white font-bold">
+            Your Mystical Study Companion
+          </p>
+        </div>
+
+        <div className="relative border-8 border-black bg-gradient-to-br from-yellow-300 via-pink-200 to-cyan-300 shadow-2xl transform hover:scale-105 transition-transform">
+          <div className="p-12 text-center">
+            <Brain className="w-20 h-20 mx-auto mb-6 text-black" />
+            <h2 className="text-3xl font-black text-black mb-6">
+              Transform Your Documents Into Knowledge!
+            </h2>
+            <p className="text-lg text-black font-bold mb-8">
+              Upload any document and let AI analyze, summarize, and create study materials for you!
+            </p>
+            <Link
+              href="/upload"
+              className="inline-flex items-center gap-2 bg-red-500 text-white px-8 py-4 border-4 border-black font-black text-xl hover:bg-red-600 transform hover:scale-110 transition-all shadow-lg"
+            >
+              <Upload className="w-6 h-6" />
+              START ANALYZING!
+            </Link>
+          </div>
+          <div className="absolute top-4 right-4 bg-green-400 border-2 border-black px-3 py-1 text-sm font-black transform rotate-12">
+            <Sparkles className="w-4 h-4 inline mr-1" />
+            AI POWERED!
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
